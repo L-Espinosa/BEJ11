@@ -32,7 +32,7 @@ router.get('/:cep/', async (req,res) => {
 
     const result = await viaCEP.consultaCEP(cepDestino)
     
-    res.send(result)
+    res.json(result)
 
 })
 

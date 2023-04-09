@@ -14,7 +14,7 @@ router.get('/:cep/', async (req,res) => {
 
     const result = await viaCEP.consultaEndereco(cepDestino)
 
-    res.send(result)
+    res.json(result)
 
 })
 
