@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "aa8bbcb4-c82a-493d-bffd-10fc913caed3",
+		"name": "Frete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3349870"
+	},
+	"item": [
+		{
+			"name": "GET / Valor do Frete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/frete/:state/:city",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"frete",
+						":state",
+						":city"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "state",
+							"value": "SP"
+						},
+						{
+							"key": "city",
+							"value": "São José dos Campos"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
