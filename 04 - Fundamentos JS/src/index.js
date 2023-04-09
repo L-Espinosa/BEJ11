@@ -58,8 +58,6 @@ const calculaFrete = (cidade, estado) => {
 
             if (obj.estado === estado) {
                 return obj.valor
-            } else {
-                throw "missingState"
             }
         }
     }
