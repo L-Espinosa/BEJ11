@@ -4,8 +4,10 @@ const app = express()
 // app.use(express.json())
 
 const freteController = require("./controllers/frete")
+const enderecoController = require("./controllers/endereco")
 
 app.use("/frete", freteController)
+app.use("/endereco", enderecoController)
 
 app.get("/", (request, response) => {
     response.json({ test: "OK" })

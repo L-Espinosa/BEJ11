@@ -2,6 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 const calculaFrete = require("../services/calculaFrete")
+const viaCEP = require("../services/viaCEP")
 
 router.get('/', (req, res) => {
     console.log(req)
@@ -24,6 +25,15 @@ router.get('/:state/:city', (req, res) => {
         
         res.json(result)
     }
+})
+
+router.get('/:cep/', async (req,res) => {
+    const cepDestino = req.params.cep
+
+    const result = await viaCEP.consultaCEP(cepDestino)
+    
+    res.send(result)
+
 })
 
 

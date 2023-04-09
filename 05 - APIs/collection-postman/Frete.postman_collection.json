@@ -43,6 +43,72 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET / Dados - Entrega por CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/frete/:cep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"frete",
+						":cep"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "cep",
+							"value": "02751000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET / Dados - Endereço de entrega",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/endereco/:cep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"endereco",
+						":cep"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "cep",
+							"value": "12235649"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
