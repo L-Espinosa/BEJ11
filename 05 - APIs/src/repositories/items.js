@@ -23,11 +23,12 @@ const create = async (input) => {
 
 }
 
-const update = async (id, input) => {
+const update = async (sku, input) => {
     console.log(input)
-    const item = await model.updateOne({ _id: id, deletedAt: null }, { $set: input })
+
+    const item = await model.updateOne({ sku: sku, deletedAt: null }, { $set: input })
     
-    return { ...item, id }
+    return { ...item, sku }
 }
 
 const all = async () => {

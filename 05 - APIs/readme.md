@@ -5,6 +5,7 @@ Para iniciar o programa:
 2 - Crie a instancia "Exercicios" com a collection "items"
 
 3 - Coloque digite o comando abaixo no terminal:
+
     npm install
     
     npm start
