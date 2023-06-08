@@ -1,0 +1,15 @@
+- KISS (keep it simple stupid)
+    Implementado segmentação clara dos códigos, deixando cada arquivo com trechos pequenos
+    e simplificando assim a leitura e entendimento do projeto como um todo.
+
+- SOLID 
+    O código do projeto está todo modularizado, segmentando cada regra de negócio e tarefa em seu arquivo
+    correspondente.
+
+- DRY (Don’t Repeat Yourself)
+    Como já citado anteriormente, o código está todo modularizado, separando as camadas de negócios das 
+    controllers, otimizando assim, a reutilização do mesmo.
+
+
+Por fim, concluo que as práticas acima descritas devem ser obrigatoriamente seguidas, pois facilita
+o desenvolvimento e, também, a manutenção posterior dos códigos.
