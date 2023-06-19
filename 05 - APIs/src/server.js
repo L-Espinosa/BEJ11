@@ -1,5 +1,5 @@
 const app = require("./app")
-const port = 3000
+const port = process.env.APP_PORT
 
 const { mongoose, databaseUrl } = require("./mongo")
 
